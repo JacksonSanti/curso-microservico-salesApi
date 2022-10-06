@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 const model = mongoose.model;
 
 const OrderSchema = new Schema({
+    _id: Number,
     products: {
         type: Array,
         required: true,
@@ -30,7 +31,7 @@ const OrderSchema = new Schema({
     },
     updatedAt: {
         type: Date,
-        required: true,
+        required: false,
     },
 });
 

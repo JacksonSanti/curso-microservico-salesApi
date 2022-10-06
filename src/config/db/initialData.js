@@ -3,6 +3,7 @@ import Order from "../../models/sales/model/Order.js";
 export async function createInitialData() {
     await Order.collection.drop();
     await Order.create({
+        _id: 10,
         products: [
             {
                productId:1001,
